@@ -1,3 +1,3 @@
 #pragma once
 
-void hello();
+void hello_cmake();

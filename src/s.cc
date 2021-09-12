@@ -2,6 +2,6 @@
 
 #include "s.h"
 
-void hello() {
+void hello_cmake() {
     std::cout << "hello!" << std::endl;
 }

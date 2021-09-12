@@ -7,6 +7,9 @@ project ( hello_cmake )
 message( STATUS "CMAKE_PROJECT_NAME = ${CMAKE_PROJECT_NAME}" )
 message( STATUS "PROJECT_SOURCE_DOR = ${PROJECT_SOURCE_DIR}" )
 
+# add sub-directory
+add_subdirectory(${PROJECT_SOURCE_DIR}/src/hello_world hello_world)
+
 # Define a variable for sources of a static lib
 set ( STATIC_LIB_S_SOURCES 
         src/s.cc
@@ -49,6 +52,6 @@ target_include_directories( hello_cmake_exe
 )
 # Link steps for target hello_cmake_exe
 target_link_libraries( hello_cmake_exe
-        PRIVATE
-        shared_lib_s
+        PRIVATE shared_lib_s
+        PRIVATE hello_world
 )
