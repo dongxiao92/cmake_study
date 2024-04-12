@@ -1,0 +1,1 @@
+add_library(TESTP1 OBJECT test.cpp)
