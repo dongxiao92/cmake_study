@@ -3,4 +3,4 @@ add_library( LIB
              p2.cpp
              )
 
-target_link_libraries(LIB $<TARGET_OBJECTS:TESTP1>)
+target_link_libraries(LIB TESTP1)
